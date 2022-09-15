@@ -1,0 +1,16 @@
+.navbar-logo {
+    font-weight: 600;
+    font-size: 36px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    background: linear-gradient(91.26deg, #72F6D1 0%, #07E57D 21.87%, #A0ED8D 55.73%, #FED365 81.77%, #FAA49E 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+@media only screen and (max-width: 800px) {
+    .navbar-logo {
+        font-size: 25px;
+    }
+}
