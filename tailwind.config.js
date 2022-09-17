@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        card: "url('/src/assets/card.png')",
+      },
+    },
   },
   plugins: [require("daisyui")],
   daisyui: {
@@ -15,7 +19,7 @@ module.exports = {
 
           accent: "#20222B",
 
-          neutral: "#17171A",
+          neutral: "#ABAFC4",
 
           "base-100": "#FFFFFF",
 

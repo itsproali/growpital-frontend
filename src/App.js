@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Route, Routes, useLocation, Navigate } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
@@ -13,6 +14,9 @@ import Wallet from "./pages/Service/Wallet/Wallet";
 function App() {
   const location = useLocation();
   const isService = location.pathname.includes("service");
+  const [openAddMoney, setOpenAddMoney] = useState(false);
+  const [openWithdraw, setOpenWithdraw] = useState(false);
+  const [transModal, setTransModal] = useState(false);
   return (
     <>
       {isService || <Navbar />}
@@ -24,7 +28,19 @@ function App() {
         <Route path="/service" element={<Service />}>
           <Route index element={<Portfolio />} />
           <Route path="invest" element={<Invest />} />
-          <Route path="wallet" element={<Wallet />} />
+          <Route
+            path="wallet"
+            element={
+              <Wallet
+                openAddMoney={openAddMoney}
+                setOpenAddMoney={setOpenAddMoney}
+                openWithdraw={openWithdraw}
+                setOpenWithdraw={setOpenWithdraw}
+                transModal={transModal}
+                setTransModal={setTransModal}
+              />
+            }
+          />
           <Route path="support" element={<Support />} />
         </Route>
       </Routes>

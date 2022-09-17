@@ -1,11 +1,12 @@
-import React from 'react';
+import React from "react";
+import Construction from "../../components/Construction/Construction";
 
 const About = () => {
-    return (
-        <div className='min-h-screen'>
-            <h1>I am About Page</h1>
-        </div>
-    );
+  return (
+    <>
+      <Construction />
+    </>
+  );
 };
 
 export default About;

@@ -1,10 +1,11 @@
 import React from 'react';
+import Construction from '../../../components/Construction/Construction';
 
 const Support = () => {
     return (
-        <div>
-            <h1>I am Support Page</h1>
-        </div>
+        <>
+        <Construction />
+      </>
     );
 };
 

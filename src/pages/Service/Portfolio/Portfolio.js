@@ -1,10 +1,11 @@
 import React from 'react';
+import Construction from '../../../components/Construction/Construction';
 
 const Portfolio = () => {
     return (
-        <div>
-            <h1>I am Portfolio Page</h1>
-        </div>
+        <>
+        <Construction />
+      </>
     );
 };
 

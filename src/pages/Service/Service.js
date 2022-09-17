@@ -3,6 +3,7 @@ import { Link, Outlet, useLocation } from "react-router-dom";
 import { HiHome, HiOutlineBriefcase } from "react-icons/hi";
 import { BiMoney, BiSupport } from "react-icons/bi";
 import { BsWallet } from "react-icons/bs";
+import "./Service.css";
 
 const Service = () => {
   const currentPath = useLocation().pathname;
@@ -15,21 +16,21 @@ const Service = () => {
   ];
   return (
     <div>
-      <div className="relative top-0 left-0 h-screen flex">
-        <div className="bg-accent w-56">
+      <div className="flex relative">
+        <div className="fixed top-0 left-0  h-full bg-accent w-56">
           <Link to="/home">
             <h1 className="navbar-logo text-center w-full mt-8">Growpital</h1>
           </Link>
           <ul className="mt-20">
             {serviceLinks.map((serviceLink, index) => (
-              <li key={index} className="my-6">
+              <li key={index} className="my-8">
                 <Link
                   to={serviceLink.path}
                   className={`${
                     currentPath === serviceLink.path
                       ? "text-secondary"
-                      : "text-white"
-                  } flex items-center gap-3 text-xl mx-6 hover:text-secondary duration-300`}
+                      : "text-neutral"
+                  } hover:text-secondary service-navigation`}
                 >
                   <span>{serviceLink.icon}</span>
                   <span>{serviceLink.name}</span>
@@ -38,7 +39,9 @@ const Service = () => {
             ))}
           </ul>
         </div>
-        <Outlet></Outlet>
+        <div className="mx-auto pl-56 w-full">
+          <Outlet></Outlet>
+        </div>
       </div>
     </div>
   );

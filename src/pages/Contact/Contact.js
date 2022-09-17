@@ -1,10 +1,11 @@
 import React from "react";
+import Construction from "../../components/Construction/Construction";
 
 const Contact = () => {
   return (
-    <div className="min-h-screen">
-      <h1>I am Contact Page</h1>
-    </div>
+    <>
+      <Construction />
+    </>
   );
 };
 

@@ -1,10 +1,11 @@
 import React from 'react';
+import Construction from '../../../components/Construction/Construction';
 
 const Invest = () => {
     return (
-        <div>
-            <h1>I am Invest Page</h1>
-        </div>
+        <>
+        <Construction />
+      </>
     );
 };
 

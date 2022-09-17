@@ -1,0 +1,25 @@
+{
+    "accountName": "Current Account",
+    "bankBalance": "XXXXX",
+    "transactionAmount": 15000,
+    "transactionDate": "2022-08-12 15:55",
+    "paymentType": {
+        "Id": "X",
+        "Name": "Bank to Wallet Transfer"
+    },
+    "senderDetails": {
+        "sender": "Balveer Singh",
+        "bank": "SBI",
+        "IFSC": "SBIN016095",
+        "accountNo": "xxxxxxxxx5736",
+        "transactionDate": "2022-08-12 19:55"
+    },
+    "receiverDetails": {
+        "receiver": "Viraj Kumar",
+        "wallet": "Growpital Wallet ",
+        "referenceNo": "DBTR/222201998174",
+        "transactionDate": "2022-09-17 19:55"
+    },
+    "paymentMethod": "UPI",
+    "transactionId": "DBTR/222201998174"
+}
