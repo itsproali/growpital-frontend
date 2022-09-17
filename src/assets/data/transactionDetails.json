@@ -2,7 +2,7 @@
     "accountName": "Current Account",
     "bankBalance": "XXXXX",
     "transactionAmount": 15000,
-    "transactionDate": "2022-08-12 15:55",
+    "transactionDate": "2022-09-12 15:55",
     "paymentType": {
         "Id": "X",
         "Name": "Bank to Wallet Transfer"
@@ -12,7 +12,7 @@
         "bank": "SBI",
         "IFSC": "SBIN016095",
         "accountNo": "xxxxxxxxx5736",
-        "transactionDate": "2022-08-12 19:55"
+        "transactionDate": "2022-09-12 19:55"
     },
     "receiverDetails": {
         "receiver": "Viraj Kumar",
